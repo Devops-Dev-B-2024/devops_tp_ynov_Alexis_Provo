@@ -13,3 +13,6 @@
 
 - Demarrer un nouveau container et servir la page html créée precedemment à l'aide d'une référence absolue
     - `docker run --name nginx -v /home/alexis/Ynov/B3/DevOps/devops_tp_ynov_Alexis_Provo/TP_DOCKER_1/html/:/usr/share/nginx/html -d -p 80:80 nginx`
+
+- Supprimer le container
+    - `docker stop CONTAINER_ID && docker rm CONTAINER_ID`
