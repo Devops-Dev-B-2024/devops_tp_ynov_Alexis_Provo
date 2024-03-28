@@ -16,3 +16,13 @@
 
 - Supprimer le container
     - `docker stop CONTAINER_ID && docker rm CONTAINER_ID`
+
+- Relancer le même container sans l'option -v puis utilisez la commande cp pour servir votre fichier (docker cp ARGS)
+    - `docker run --name nginx -d -p 80:80 nginx`
+    - `docker cp html/ dbdebc68ec13:/usr/share/nginx/`
+
+# Builder une image
+- A l'aide d'un Dockerfile, créer une image qui permet d'executer un serveur web (apache, nginx...)
+    - Voir Dockerfile
+    - `docker build -t nginx-dockerfile .`
+    - `sudo docker run --name nginx-dockerfile -p 80:80 nginx-dockerfile`
