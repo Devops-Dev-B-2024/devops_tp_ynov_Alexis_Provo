@@ -17,3 +17,12 @@ Au bout de 3 mois, nous créons une release candidate à partir de la branche pr
 
 Le fait que les développeurs de l'équipe s'occupe d'une partie du DevOps et soient responsables du déploiement est très intéressant.
 Cependant, il nous arrive parfois d'être bloqués sur des points où nous n'avons pas la main, et devons voir avec l'équipe DevOps qui a un scope beaucoup plus large et s'occupe de tout le reste.
+
+## Outils
+
+- GitLab
+- Docker
+- Kubernetes
+- Jenkins
+- Helm
+- ChartsMuseum
