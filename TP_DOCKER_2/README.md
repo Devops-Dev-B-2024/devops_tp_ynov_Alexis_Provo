@@ -31,3 +31,8 @@
     - Pour la question 3, nous devons renseigner tous les paramètres de notre image à chaque fois que nous voulons la lancer, alors que pour la question 4 la grande partie des paramètres est déjà indiqué dans le Dockerfile.
     - Lancer une image à partir d'un Dockerfile est plus simple et pratique, nous pouvons aussi renseigner des commandes à lancer dans l'image à partir du Dockerfile.
     - Il ne reste plus qu'a lancer l'image créée à partir du Dockerfile et indiquer les ports exposés
+
+# Utiliser une base de donnée dans un container Docker
+- Récuperer les images mysql (ou mariadb) et phpmyadmin depuis le Docker Hub
+    - `docker pull mysql`
+    - `docker pull phpmyadmin`
