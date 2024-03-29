@@ -36,3 +36,30 @@
 - Récuperer les images mysql (ou mariadb) et phpmyadmin depuis le Docker Hub
     - `docker pull mysql`
     - `docker pull phpmyadmin`
+- Executer 2 containers à partir des images. Lancer phpmyadmin (conteneurisé et publié sur un port) et ajoutez une table via l'interface
+    - `docker network create tp_docker`
+    - `docker run --name mysql --network=tp_docker -e MYSQL_ROOT_PASSWORD=password -d mysql:latest`
+    - `docker run --name phpmyadmin --network=tp_docker -e PMA_HOST=mysql -e PMA_PORT=3306 -d -p 8080:80 phpmyadmin:latest`
+    - Se rendre sur [http://localhost:8080](http://localhost:8080) et se connecter avec l'utilisateur root et le mot de passe défini lors du lancement de l'image mysql
+
+    - ![step1](images/step1.png)
+
+    - Cliquer sur `Nouvelle base de données`
+
+    - ![step2](images/step2.png)
+
+    - Renseigner le nom de la nouvelle base de données, et cliquer sur `Créer`
+
+    - ![step3](images/step3.png)
+
+    - Renseigner le nom de la nouvelle table, et cliquer sur `Créer`
+
+    - ![step4](images/step4.png)
+
+    - Renseigner les colonnes de la table, et cliquer sur `Enregistrer`
+
+    - ![step5](images/step5.png)
+
+    - On peut voir que la nouvelle base et la nouvelle table ont été créées
+
+    - ![step6](images/step6.png)
