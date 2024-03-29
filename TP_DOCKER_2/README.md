@@ -25,4 +25,5 @@
 - A l'aide d'un Dockerfile, créer une image qui permet d'executer un serveur web (apache, nginx...)
     - Voir Dockerfile
     - `docker build -t nginx-dockerfile .`
-    - `sudo docker run --name nginx-dockerfile -p 80:80 nginx-dockerfile`
+- Executer cette nouvelle image de manière à servir .html/index.html
+    - `docker run --name nginx-dockerfile -p 80:80 nginx-dockerfile`
