@@ -68,3 +68,7 @@
 - Allez lire la documentation de docker-compose et essayer de décrire à quoi sert cette commande VS la commande docker run
     - La commande `docker-compose` permet de lancer plusieurs container en même temps, la où `docker run` ne peut lancer que un seul container à la fois.
     - Docker compose permet aussi de gérer les volumes, le networking et les services dans un seul fichier
+
+- Quelle commande permet de lancer tous les containers du fichier yaml ? Quelle commande permet de les stopper ?
+    - La commande `docker compose up` permet de lancer tous les containers
+    - La commande `docker compose stop` permet de stopper tous les containers
