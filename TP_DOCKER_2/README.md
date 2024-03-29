@@ -72,3 +72,7 @@
 - Quelle commande permet de lancer tous les containers du fichier yaml ? Quelle commande permet de les stopper ?
     - La commande `docker compose up` permet de lancer tous les containers
     - La commande `docker compose stop` permet de stopper tous les containers
+
+- Ecrivez un fichier docker-compose.yml pour servir votre base de données (mysql, mariadb, etc.) ET phpmyadmin
+    - Voir fichier docker-compose.yml
+    - Lancer la commande `docker compose up -d`
