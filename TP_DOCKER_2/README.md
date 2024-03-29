@@ -27,3 +27,7 @@
     - `docker build -t nginx-dockerfile .`
 - Executer cette nouvelle image de manière à servir .html/index.html
     - `docker run --name nginx-dockerfile -p 80:80 nginx-dockerfile`
+- Quelles différences observez-vous entre les questions 3 et 4, trouvez les avantages & inconvénients de chaque procédure (mount volume VS copy)
+    - Pour la question 3, nous devons renseigner tous les paramètres de notre image à chaque fois que nous voulons la lancer, alors que pour la question 4 la grande partie des paramètres est déjà indiqué dans le Dockerfile.
+    - Lancer une image à partir d'un Dockerfile est plus simple et pratique, nous pouvons aussi renseigner des commandes à lancer dans l'image à partir du Dockerfile.
+    - Il ne reste plus qu'a lancer l'image créée à partir du Dockerfile et indiquer les ports exposés
